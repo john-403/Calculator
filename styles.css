@@ -139,6 +139,33 @@ body {
 
 }
 
+
+
+/* html {
+    background-image: url(maths.jpg);
+    
+
+} */
+html::after {
+    content: "";
+    background: url(maths.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     background-color: wheat;
     border: 2px solid gray;
@@ -148,8 +175,8 @@ body {
     height: 500px;
     width: 400px;
     /* justify-items: center; */
-    margin: auto auto;
-    margin-top: 75px;
+    /* margin: auto auto; */
+    /* margin-top: 75px; */
     align-items: center;
     align-content: flex-end;
     grid-auto-rows: min-content;
@@ -212,4 +239,41 @@ button {
 
 .number:hover {
     background-color: darkgrey;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    /*     html::after {
+        content: "";
+        background: none;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    } */
+    html::after {
+        content: "";
+        background: none;
+
+    }
+
+    /*     .container {
+        width: 440px;
+        height: 530px;
+    } */
+
+    .container {
+        width: 350px;
+        height: 530px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
 }
