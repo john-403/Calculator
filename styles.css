@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-size: xx-large;
+
+}
+
+.container {
+    background-color: wheat;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    height: 500px;
+    width: 400px;
+    /* justify-items: center; */
+    margin: auto auto;
+    margin-top: 75px;
+    align-items: center;
+    align-content: flex-end;
+    grid-auto-rows: min-content;
+    padding: 10px 5px;
+    border-radius: 1em;
+}
+
+button {
+    border-radius: 2em;
+    padding: 20px;
+
+    border: none;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.number {
+    background-color: gray;
+}
+
+.result-container {
+    grid-column: span 4;
+    justify-self: flex-end;
+    margin-bottom: 0.5em;
+    font-size: 60px;
+}
+
+#clear {
+    grid-column: span 3;
+    /* background-color: aqua; */
+    background-color: rgba(5, 239, 231, 1);
+    opacity: 0.8;
+    color: white;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+#equals {
+    grid-column: span 2;
+    background-color: rgba(6, 57, 112, 0.7);
+    color: white;
+}
+
+.operator {
+    background-color: rgba(6, 57, 112, 0.7);
+    color: white;
+}
+
+#clear:hover {
+    background-color: rgba(5, 183, 232, 1);
+}
+
+.operator:hover,
+#equals:hover {
+    background-color: rgba(6, 57, 112, 0.9);
+
+}
+
+.number:hover {
+    background-color: darkgrey;
+}
