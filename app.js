@@ -72,6 +72,7 @@ for (let button of buttons) {
 
 
     button.addEventListener('click', function (e) {
+        result.innerText += e.target.innerText;
         // const firstNumber = e.target.innerText;
         // const secondNumber = e.target.innerText;
         // console.log(firstNumber);
@@ -108,7 +109,7 @@ for (let button of buttons) {
         }
         console.log(`Final operation is ${operation}`);
         if (e.target.id === 'equals') {
-
+            result.innerText = '';
             //result.innerText += operate(operatorClicked, numbersClicked[0], numbersClicked[1]);
             // numbersClicked = numbersClicked.slice(0, 2);
             // console.log(math_it_up[operatorClicked](1, 2));
@@ -162,7 +163,9 @@ for (let button of buttons) {
 
         }
         if (e.target.id === 'clear') {
-            result.innerText = 'Result:';
+            /* result.innerText = 'Result:'; */
+            result.innerText = '';
+            /* result.innerText = 'test'; */
             numbersClicked = [];
             operatorClicked = [];
             operation = [];
